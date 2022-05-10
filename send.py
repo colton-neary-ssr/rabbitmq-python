@@ -13,7 +13,7 @@ channel.queue_declare(queue='hello')
 for i in range(1000):
     channel.basic_publish(exchange='',
                         routing_key='hello',
-                        body='Fuck off wanker...')
+                        body='Hello World')
     print(" [x] Sent 'Hello World!'")
 
 # Close connection to ensure message sends
